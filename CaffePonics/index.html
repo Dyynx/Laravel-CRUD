@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaffePonics</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,500&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link
+      href="asset/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 & Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CPonics.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="bg-gradient-header py-4 border-bottom shadow-sm text-center">
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="d-flex align-items-center gap-3 mb-2">
+          <img
+            src="asset/picture/CAFFE.jpg"
+            onerror="
+              this.src =
+                'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=150&auto=format&fit=crop&q=80'
+            "
+            alt="CaffePonics Logo"
+            class="brand-logo-img rounded-circle border border-2 border-success shadow-sm"
+          />
+          <h1 class="brand-title display-5 m-0">
+            Caffe<span class="text-accent">Ponics</span>
+          </h1>
+        </div>
+        <p class="brand-subtitle text-muted fs-6 m-0">
+          <i class="fa-solid fa-leaf text-success me-1"></i> Fresh Vegetable
+          Green House & Herbal Coffee Bar
+        </p>
+      </div>
+    </header>
+
+    <!-- NAVBAR SLIDE MENU -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark-green shadow"
+    >
+      <div class="container">
+        <a class="navbar-brand d-lg-none fw-bold text-success fs-6" href="#">
+          <i class="fa-solid fa-leaf me-1"></i> CaffePonics Menu
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end bg-dark-green text-white"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header border-bottom border-secondary">
+            <h5
+              class="offcanvas-title text-success fw-bold"
+              id="offcanvasNavbarLabel"
+            >
+              <i class="fa-solid fa-leaf me-2"></i>CaffePonics
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2 align-items-lg-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="#Home"
+                  ><i class="fa-solid fa-house me-1"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Products"
+                  ><i class="fa-solid fa-seedling me-1"></i> Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#BarMenu"
+                  ><i class="fa-solid fa-mug-hot me-1"></i> Herbal & Bar</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="infoDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fa-solid fa-circle-info me-1"></i> Info
+                </a>
+                <ul class="dropdown-menu shadow border-0" aria-labelledby="infoDropdown">
+                  <li><a class="dropdown-item" href="#cart.html"><i class="fa-solid fa-cart-shopping me-2 text-success"></i>Cart</a></li>
+                  <li><a class="dropdown-item" href="#checkout.html"><i class="fa-solid fa-credit-card me-2 text-primary"></i>Checkout</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#Edukasi"><i class="fa-solid fa-newspaper me-2 text-info"></i>Article & Edukasi</a></li>
+                </ul>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact"
+                  ><i class="fa-solid fa-envelope me-1"></i> Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section
+      id="Home"
+      class="hero-section text-white d-flex align-items-center position-relative py-5"
+    >
+      <div class="hero-overlay"></div>
+      <div class="container position-relative z-1 py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-center text-lg-start">
+            <span
+              class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-3"
+            >
+              <i class="fa-solid fa-circle-check me-1"></i> 100% Bebas Pestisida
+            </span>
+            <h1 class="display-4 fw-bold mb-3 hero-title">
+              Fresh Vegetable & Fruits Foods
+            </h1>
+            <p class="lead mb-4 opacity-90">
+              Sayuran hidroponik segar berkualitas tinggi dan aneka sajian
+              seduhan herbal & kopi pilihan.
+            </p>
+
+            <div
+              class="search-box mx-auto ms-lg-0 bg-white p-2 rounded-pill shadow-lg d-flex align-items-center max-w-600"
+            >
+              <i class="fa-solid fa-magnifying-glass text-muted ms-3 me-2"></i>
+              <input
+                type="text"
+                id="searchInput"
+                onkeyup="searchProducts()"
+                class="form-control border-0 shadow-none"
+                placeholder="Cari kangkung, bayam, pakcoy, kopi..."
+              />
+              <button
+                class="btn btn-success rounded-pill px-4 py-2 text-nowrap fw-semibold"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <div class="container my-5">
+      <!-- BARIS 1: PRODUK (MAX 6) & SIDEBAR -->
+      <div class="row g-4 mb-5">
+        <!-- Main Product Area -->
+        <main class="col-lg-8">
+          <section id="Products">
+            <div
+              class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2"
+            >
+              <h2 class="h3 fw-bold text-success mb-0">
+                <i class="fa-solid fa-leaf me-2"></i>Katalog Produk Utama
+              </h2>
+              <span
+                class="badge bg-success-subtle text-success border border-success px-3 py-1 rounded-pill"
+              >
+                Top Pick
+              </span>
+            </div>
+
+            <!-- Grid 6 Produk -->
+            <div class="row g-3" id="tugas2ProductContainer">
+              <!-- Diisi JavaScript max 6 item -->
+            </div>
+
+            <!-- Tombol Selengkapnya ke Tugas2.html -->
+            <div class="text-center mt-4">
+              <a
+                href="Tugas2.html"
+                class="btn btn-outline-success rounded-pill px-4 py-2 fw-semibold shadow-sm"
+              >
+                Lihat Selengkapnya Semua Produk
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </section>
+        </main>
+
+        <!-- Sidebar Area (Sejajar dengan Produk) -->
+        <aside class="col-lg-4" id="Info">
+          <!-- Widget Jam Buka -->
+          <div
+            class="card border-0 shadow-sm mb-4 bg-light border-start border-4 border-success"
+          >
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-success mb-3">
+                <i class="fa-regular fa-clock me-2"></i>Jam Operasional
+              </h5>
+              <ul class="list-unstyled mb-0 small">
+                <li class="d-flex justify-content-between py-2 border-bottom">
+                  <span>Order Sayuran:</span>
+                  <span class="fw-semibold">08.00 - 15.00 WIB</span>
+                </li>
+                <li class="d-flex justify-content-between py-2 border-bottom">
+                  <span>Herbal & Cafe:</span>
+                  <span class="fw-semibold">15.00 - 21.00 WIB</span>
+                </li>
+                <li class="d-flex justify-content-between py-2">
+                  <span>Hari Operasional:</span>
+                  <span class="badge bg-success">Senin - Sabtu</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Widget Layanan Kebun -->
+          <div class="card border-0 shadow-sm">
+            <div class="card-header bg-dark-green text-white fw-bold">
+              <i class="fa-solid fa-list me-2"></i>Layanan Favorit Kebun
+            </div>
+            <ul class="list-group list-group-flush small">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span
+                  ><i class="fa-solid fa-basket-shopping me-2 text-success"></i
+                  >Langganan Sayur Pekanan</span
+                >
+                <span class="badge bg-primary rounded-pill">Hemat</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span
+                  ><i class="fa-solid fa-graduation-cap me-2 text-info"></i
+                  >Workshop Pelatihan Kebun</span
+                >
+                <span class="badge bg-secondary rounded-pill">Sabtu</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span
+                  ><i class="fa-solid fa-truck-ramps me-2 text-warning"></i
+                  >Suplai Restoran & Cafe</span
+                >
+                <span class="badge bg-success rounded-pill">Grosir</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-- BARIS 2: HERBAL & BAR MENU (FULL WIDTH MELEBAR) -->
+      <section id="BarMenu" class="mb-5 pt-3">
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2"
+        >
+          <h2 class="h3 fw-bold text-amber mb-0">
+            <i class="fa-solid fa-mug-hot me-2"></i>Herbal & Coffee Bar Menu
+          </h2>
+          <span class="text-muted small">Seduhan Alami & Segar</span>
+        </div>
+
+        <div class="table-responsive bg-white rounded shadow-sm p-3 border">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Menu</th>
+                <th>Kategori</th>
+                <th>Manfaat Utama</th>
+                <th>Harga</th>
+                <th class="text-center">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="fw-bold">Matchaponik Smoothie</div>
+                  <small class="text-muted">Bayam Horenzo + Matcha</small>
+                </td>
+                <td>
+                  <span class="badge bg-success-subtle text-success"
+                    >Bar Special</span
+                  >
+                </td>
+                <td>Detoks Alami & Antioksidan Tinggi</td>
+                <td class="fw-bold text-success">Rp 22.000</td>
+                <td class="text-center">
+                  <button class="btn btn-sm btn-amber rounded-circle">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="fw-bold">Kunyit Asam Cold Brew</div>
+                  <small class="text-muted">Rempah Organik + Madu Murni</small>
+                </td>
+                <td>
+                  <span class="badge bg-warning-subtle text-warning-emphasis"
+                    >Herbal</span
+                  >
+                </td>
+                <td>Meningkatkan Imunitas & Kesegaran Tubuh</td>
+                <td class="fw-bold text-success">Rp 18.000</td>
+                <td class="text-center">
+                  <button class="btn btn-sm btn-amber rounded-circle">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="fw-bold">Artisanal Mint Espresso</div>
+                  <small class="text-muted">Kopi Arabika + Mint Kebun</small>
+                </td>
+                <td>
+                  <span class="badge bg-secondary-subtle text-secondary"
+                    >Coffee</span
+                  >
+                </td>
+                <td>Kopi Segar Perpaduan Mint Khas Kebun</td>
+                <td class="fw-bold text-success">Rp 25.000</td>
+                <td class="text-center">
+                  <button class="btn btn-sm btn-amber rounded-circle">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- BARIS 3: CONTACT & LOCATION (FULL WIDTH MELEBAR) -->
+      <section id="Contact" class="pt-3 mb-4">
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2"
+        >
+          <h2 class="h3 fw-bold text-success mb-0">
+            <i class="fa-solid fa-paper-plane me-2"></i>Hubungi & Pesan Sekarang
+          </h2>
+          <span class="text-muted small">Layanan Pelanggan</span>
+        </div>
+
+        <div class="card border-0 shadow-sm p-4 bg-white">
+          <div class="row g-4">
+            <!-- Form Pesanan Customer -->
+            <div class="col-md-6">
+              <h5 class="fw-bold mb-3 text-dark">
+                <i class="fa-solid fa-cart-flatbed me-2 text-success"></i>Kirim
+                Pesanan / Pertanyaan
+              </h5>
+              <form
+                id="orderForm"
+                onsubmit="
+                  event.preventDefault();
+                  alert('Terima kasih! Pesanan/Pesan Anda telah terkirim.');
+                "
+              >
+                <div class="mb-3">
+                  <label for="custName" class="form-label small fw-semibold"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-sm"
+                    id="custName"
+                    placeholder="Masukkan nama Anda"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="custPhone" class="form-label small fw-semibold"
+                    >Nomor WhatsApp</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control form-control-sm"
+                    id="custPhone"
+                    placeholder="Contoh: 0887433130505"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="custMessage" class="form-label small fw-semibold"
+                    >Pesanan / Catatan</label
+                  >
+                  <textarea
+                    class="form-control form-control-sm"
+                    id="custMessage"
+                    rows="6"
+                    placeholder="Tuliskan pesanan sayur / minuman herbal yang diinginkan..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-success rounded-pill px-4 w-100 fw-semibold"
+                >
+                  <i class="fa-solid fa-paper-plane me-1"></i> Kirim Pesanan
+                </button>
+              </form>
+            </div>
+
+            <!-- Info Kontak & Peta Lokasi -->
+            <div class="col-md-6">
+              <h5 class="fw-bold mb-3 text-dark">
+                <i class="fa-solid fa-address-book me-2 text-success"></i>Kontak
+                Kebun & Bar
+              </h5>
+
+              <div class="d-flex align-items-center mb-3 p-2 bg-light rounded">
+                <div
+                  class="bg-success text-white rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="fa-brands fa-whatsapp fs-5"></i>
+                </div>
+                <div>
+                  <div class="small text-muted">WhatsApp / Telepon</div>
+                  <a
+                    href="https://wa.me/62887433130505"
+                    target="_blank"
+                    class="fw-bold text-decoration-none text-dark"
+                    >0887433130505</a
+                  >
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center mb-3 p-2 bg-light rounded">
+                <div
+                  class="bg-primary text-white rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="fa-solid fa-envelope fs-5"></i>
+                </div>
+                <div>
+                  <div class="small text-muted">Email Official</div>
+                  <a
+                    href="mailto:alifkusuma098@gmail.com"
+                    class="fw-bold text-decoration-none text-dark"
+                    >alifkusuma098@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mt-3"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3226.503485175049!2d106.81817107395507!3d-6.429045662868138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjUnNDQuNiJTIDEwNsKwNDknMTQuNyJF!5e1!3m2!1sid!2sid!4v1789879290653!5m2!1sid!2sid"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="fw-bold text-success mb-3">CaffePonics</h5>
+            <p class="small text-secondary">
+              Menyediakan produk pertanian perkotaan yang sehat, segar, dan
+              tanpa pestisida serta tempat bersantai menikmati sajian racikan
+              herbal dan kopi berkualitas.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Navigasi</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                <a href="#Home" class="text-secondary text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#Products" class="text-secondary text-decoration-none"
+                  >Products</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#BarMenu" class="text-secondary text-decoration-none"
+                  >Bar Menu</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#Contact" class="text-secondary text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6 class="fw-bold mb-3">Sertifikasi & Kualitas</h6>
+            <ul class="list-unstyled small text-secondary">
+              <li class="mb-2">
+                <i class="fa-solid fa-check text-success me-2"></i>100% Bebas
+                Pestisida Kimia
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-check text-success me-2"></i>Air Nutrisi
+                Terkontrol
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-check text-success me-2"></i>Dipetik Saat
+                Dipesan
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6 class="fw-bold mb-3">Kontak Resmi</h6>
+            <p class="small text-secondary mb-1">
+              <i class="fa-brands fa-whatsapp me-2"></i>0887433130505
+            </p>
+            <p class="small text-secondary mb-1">
+              <i class="fa-solid fa-envelope me-2"></i>alifkusuma098@gmail.com
+            </p>
+            <p class="small text-secondary">
+              <i class="fa-solid fa-location-dot me-2"></i>Pancoran Mas, Depok
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+        <div class="text-center small text-secondary">
+          <p class="mb-0">
+            &copy; 2026 CaffePonics & Herbal Bar. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="asset/bootstrap.bundle.min.js"></script>
+
+    <!-- JAVASCRIPT INTEGRASI DATA TUGAS 2 -->
+    <script>
+      const fallbackProducts = [
+        {
+          nama: "Kangkung",
+          harga: "Rp20.000 | 1kg",
+          stok: "5 pcs",
+          img: "asset/picture/Tgs2/kangkung-1024x724.png",
+        },
+        {
+          nama: "Bayam",
+          harga: "Rp20.000 | 1kg",
+          stok: "5 pcs",
+          img: "asset/picture/Tgs2/Gambar-Daun-Bayam.jpg",
+        },
+        {
+          nama: "Seledri",
+          harga: "Rp35.000 | 1kg",
+          stok: "5 pcs",
+          img: "asset/picture/Tgs2/Inilah-X-Manfaat-Daun-Seledri-untuk-Kesehatan.jpg.webp",
+        },
+        {
+          nama: "Pakcoy",
+          harga: "Rp20.000 | 1kg",
+          stok: "5 pcs",
+          img: "asset/picture/Tgs2/tips-memilih-pakcoy-segarjpg-20221003062126.jpg",
+        },
+        {
+          nama: "Selada",
+          harga: "Rp35.000 | 1kg",
+          stok: "5 pcs",
+          img: "asset/picture/Tgs2/no_brand_sayur_selada_keriting_1_kg_hidroponik_sayur_segar_bebas_pestisida_full01_u96i0ufl.webp",
+        },
+        {
+          nama: "Sawi Hijau",
+          harga: "Rp20.000 | 1kg",
+          stok: "5 pcs",
+          img: "asset/picture/Tgs2/sawi-1024x724.png",
+        },
+      ];
+
+      function renderProducts(products) {
+        const container = document.getElementById("tugas2ProductContainer");
+        if (!container) return;
+        container.innerHTML = "";
+
+        const displayItems = products.slice(0, 6);
+
+        displayItems.forEach((item) => {
+          const cardHtml = `
+          <div class="col-6 col-md-4 product-card-item">
+            <div class="card h-100 border-0 shadow-sm product-card">
+              <img src="${item.img}" onerror="this.src='https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&auto=format&fit=crop&q=80'" class="card-img-top product-img" alt="${item.nama}">
+              <div class="card-body p-3">
+                <span class="badge bg-success mb-1">Stok: ${item.stok}</span>
+                <h6 class="card-title fw-bold mb-1">${item.nama}</h6>
+                <div class="text-success fw-bold small mb-2">${item.harga}</div>
+                <button class="btn btn-outline-success btn-sm w-100 rounded-pill">
+                  <i class="fa-solid fa-cart-shopping me-1"></i> Beli
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+          container.innerHTML += cardHtml;
+        });
+      }
+
+      async function fetchTugas2Data() {
+        try {
+          const response = await fetch("Tugas2.html");
+          if (!response.ok) throw new Error("Gagal mengambil Tugas2.html");
+
+          const htmlText = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(htmlText, "text/html");
+          const items = doc.querySelectorAll(".produk_tgs2");
+
+          if (items.length === 0)
+            throw new Error("Item produk tidak ditemukan");
+
+          let extractedProducts = [];
+          items.forEach((item) => {
+            let rawImg =
+              item.querySelector(".gambar_tgs2")?.getAttribute("src") || "";
+            // KODE BARU (Otomatis diarahkan ke folder asset baru)
+            let fileName = rawImg.split("/").pop(); // Ambil nama filenya saja (contoh: kangkung-1024x724.png)
+            let cleanImg = "asset/picture/Tgs2/" + fileName;
+
+            const nama =
+              item.querySelector(".nama_tgs2")?.textContent.trim() || "Produk";
+            const harga =
+              item.querySelector(".harga_tgs2")?.textContent.trim() || "";
+            const stok =
+              item.querySelector(".kategori_tgs2")?.textContent.trim() || "Ada";
+
+            extractedProducts.push({ nama, harga, stok, img: cleanImg });
+          });
+
+          renderProducts(extractedProducts);
+        } catch (error) {
+          console.warn("Menggunakan data fallback:", error.message);
+          renderProducts(fallbackProducts);
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        fetchTugas2Data();
+      });
+
+      function searchProducts() {
+        const input = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const cardItems = document.querySelectorAll(".product-card-item");
+
+        cardItems.forEach((item) => {
+          const title = item
+            .querySelector(".card-title")
+            .textContent.toLowerCase();
+          item.style.display = title.includes(input) ? "block" : "none";
+        });
+      }
+    </script>
+  </body>
+</html>

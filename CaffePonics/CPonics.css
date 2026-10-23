@@ -1,0 +1,264 @@
+/* =========================================
+   Custom Styling Anyelir Hydroponic & Bar
+   ========================================= */
+
+:root {
+  --bg-dark-green: #1c3b2b;
+  --primary-green: #2e7d32;
+  --accent-amber: #d97706;
+  --light-bg: #f8f9fa;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  background-color: #f4f6f4;
+}
+
+h1,
+h2,
+h3,
+.brand-title {
+  font-family: "Lora", serif;
+}
+
+/* Header & Brand Logo */
+.bg-gradient-header {
+  background: linear-gradient(135deg, #ffffff 0%, #eef7f2 100%);
+}
+
+.brand-logo-img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.brand-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--bg-dark-green);
+}
+
+.text-accent {
+  color: var(--primary-green);
+}
+
+.brand-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Navbar */
+.bg-dark-green {
+  background-color: var(--bg-dark-green) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Dropdown Menu Fixing Hover & Contrast */
+.dropdown-menu {
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.dropdown-item {
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #eef7f2;
+  color: var(--primary-green);
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url("https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1200&auto=format&fit=crop&q=80");
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 59, 43, 0.85) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.max-w-600 {
+  max-width: 600px;
+}
+
+/* Product Cards */
+.product-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px !important;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Colors & Buttons */
+.text-amber {
+  color: var(--accent-amber);
+}
+
+.btn-amber {
+  background-color: var(--accent-amber);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-amber:hover {
+  background-color: #b45309;
+  color: #ffffff;
+}
+
+.bg-amber-gradient {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+/* STYLING TABEL & RESPONSIVE VIA CSS */
+.tabel_tgs2 {
+  width: 100%;
+  border-collapse: separate;
+}
+
+.produk_tgs2 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  vertical-align: top;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.produk_tgs2:hover {
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.gambar_tgs2 {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.nama_tgs2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 10px 0 6px;
+  color: #1b5e20;
+}
+
+.info_tgs2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.harga_tgs2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.kategori_tgs2 {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.buy_tgs2 {
+  background-color: #2e7d32;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.buy_tgs2:hover {
+  background-color: #1b5e20;
+}
+
+/* RESPONSIVE BREAKPOINTS (AGAR TABEL TIDAK HANCUR DI MOBILE/TABLET) */
+@media (max-width: 900px) {
+  .tabel_tgs2,
+  .tabel_tgs2 tbody,
+  .tabel_tgs2 tr,
+  .tabel_tgs2 td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabel_tgs2 tr {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .tabel_tgs2 tr {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
